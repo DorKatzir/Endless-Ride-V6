@@ -87,6 +87,10 @@ ul.links .link a:hover {
 
 @media screen and (max-width: 850px) {
   nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-areas: "logo burger" "links links";
     overflow: hidden;
   }
