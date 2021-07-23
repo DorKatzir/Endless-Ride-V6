@@ -52,11 +52,6 @@ ul.links{
 }
 
 .burger{
-    grid-area: burger; 
-    padding-bottom: 1rem;  
-    cursor: pointer;
-    justify-self: end;
-    transition: all .5s ease;
     display: none;
 }
 
@@ -127,7 +122,6 @@ ul.links{
     
     .burger{
         display: block !important;
-        visibility: visible;
         grid-area: burger;
         padding-bottom: 1rem;  
         cursor: pointer;

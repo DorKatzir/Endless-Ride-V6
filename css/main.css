@@ -63,13 +63,6 @@ ul.links .link a:hover {
 }
 
 .burger {
-  grid-area: burger;
-  padding-bottom: 1rem;
-  cursor: pointer;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
   display: none;
 }
 
@@ -130,7 +123,6 @@ ul.links .link a:hover {
   }
   .burger {
     display: block !important;
-    visibility: visible;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: burger;
