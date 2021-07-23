@@ -16,11 +16,6 @@ nav {
   gap: 1rem;
 }
 
-.burger {
-  padding-bottom: 1rem;
-  display: none;
-}
-
 ul.links {
   padding-bottom: 1rem;
   display: -ms-grid;
@@ -65,6 +60,17 @@ ul.links .link a:hover {
 
 .icons img:hover {
   background-color: var(--color-dark-text);
+}
+
+.burger {
+  grid-area: burger;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: none;
 }
 
 @media screen and (max-width: 1152px) {
@@ -113,24 +119,25 @@ ul.links .link a:hover {
             transform: translateY(0%);
   }
   .logo {
-    -ms-grid-column-align: start;
-        justify-self: start;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logo;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .logo img {
     min-width: 80px;
   }
   .burger {
-    padding-bottom: 1rem;
     display: block !important;
-    cursor: pointer;
-    -ms-grid-column-align: end;
-        justify-self: end;
+    visibility: visible;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: burger;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    -ms-grid-column-align: end;
+        justify-self: end;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }

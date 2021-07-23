@@ -9,11 +9,6 @@ nav{
     gap: 1rem;   
 }
 
-.burger{
-    padding-bottom: 1rem;  
-    display: none;
-}
-
 
 ul.links{
     padding-bottom: 1rem;
@@ -56,7 +51,14 @@ ul.links{
     }
 }
 
-
+.burger{
+    grid-area: burger; 
+    padding-bottom: 1rem;  
+    cursor: pointer;
+    justify-self: end;
+    transition: all .5s ease;
+    display: none;
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -90,7 +92,6 @@ ul.links{
 @media screen and (max-width: 850px){
 
     nav{
-       
         grid-template-areas: 
         "logo burger"
         "links links";
@@ -99,6 +100,7 @@ ul.links{
 
     nav .links{   
         grid-area: links;
+
         grid-auto-flow: row;
         gap: .5rem; 
         height: 0;
@@ -115,25 +117,26 @@ ul.links{
     }
     
     .logo{
-        justify-self: start;
         grid-area: logo;
+
+        justify-self: start;
         img{
             min-width: 80px;
         }
     }
     
     .burger{
-        padding-bottom: 1rem;  
         display: block !important;
+        visibility: visible;
+        grid-area: burger;
+        padding-bottom: 1rem;  
         cursor: pointer;
         justify-self: end;
-        grid-area: burger;
         transition: all .5s ease;
     }
     
     .burger.close{
-        transform: rotate(-180deg);
-        
+        transform: rotate(-180deg);  
     }
 
     
