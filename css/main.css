@@ -124,7 +124,7 @@ ul.links .link a:hover {
   }
   .burger {
     padding-bottom: 1rem;
-    display: block;
+    display: block !important;
     cursor: pointer;
     -ms-grid-column-align: end;
         justify-self: end;

@@ -124,7 +124,7 @@ ul.links{
     
     .burger{
         padding-bottom: 1rem;  
-        display: block;
+        display: block !important;
         cursor: pointer;
         justify-self: end;
         grid-area: burger;
