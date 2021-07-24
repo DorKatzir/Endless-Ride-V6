@@ -3,7 +3,8 @@ nav{
     display: grid;
     grid-template-columns: 1fr auto auto;
     align-items: center;
-    gap: 1rem;   
+    gap: 1rem;  
+    
 }
 
 
@@ -22,7 +23,7 @@ ul.links{
         border-radius: 15px;
         transition: all .35s ease-in-out;
         
-        &:hover{
+        &:hover, &:active, &:focus{
             background-color: var(--color-link-over);
         }
     }
@@ -70,39 +71,16 @@ ul.links{
     nav{
         grid-template-columns: auto 1fr;
         justify-items: end;
+    }
+    .logo{
+        width: 120px;
     }      
 }
-
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 1032px){
-
-    nav{
-        grid-template-columns: auto;
-        justify-items: center;
-    } 
-
-    .logo{
-        width: 100px;
-    }  
-
-    .link a{
-        font-size: .2rem;
-        font-weight: 300;
-        
-    }
-    .site-wrapper{
-        grid-gap: 0 !important;
-    }
-}
-
-
-
-//////////////////////////////////////////////////////////////////////////////////
-
-@media screen and (max-width: 830px){
 
     nav{
         display: grid;
@@ -127,6 +105,7 @@ ul.links{
         .link a{
             padding: .5rem 2rem;
             border-radius: 0;
+            font-size: .8rem;
         }
     }
 
