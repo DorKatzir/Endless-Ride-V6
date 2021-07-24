@@ -1,9 +1,10 @@
 section#tour-package{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     align-items: center;
     justify-items: center;
     gap: 2rem;
+    justify-content: center;
 }
 
 
