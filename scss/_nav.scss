@@ -1,6 +1,3 @@
-header{   
-    padding: 2rem;
-}
 
 nav{
     display: grid;
@@ -11,7 +8,6 @@ nav{
 
 
 ul.links{
-    padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
     gap: 1px;
@@ -23,17 +19,16 @@ ul.links{
         font-size: 1rem;
         font-weight: 600;
         padding: 0 1rem;
-        border-radius: 5px;
+        border-radius: 15px;
         transition: all .35s ease-in-out;
         
         &:hover{
-            background-color: var(--color-dark-text);
+            background-color: var(--color-link-over);
         }
     }
 }
 
 .icons{
-    padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
     gap: 5px;
@@ -51,10 +46,20 @@ ul.links{
     }
 }
 
-.burger{
-    display: none;
-}
 
+.burger{
+    width: 30px;
+    span{
+      width:30px;
+      height: 3px;
+      background: white;
+      display: block;
+      &:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+    display: none;
+  }
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -77,14 +82,27 @@ ul.links{
     nav{
         grid-template-columns: auto;
         justify-items: center;
-    }      
+    } 
+
+    .logo{
+        width: 100px;
+    }  
+
+    .link a{
+        font-size: .2rem;
+        font-weight: 300;
+        
+    }
+    .site-wrapper{
+        grid-gap: 0 !important;
+    }
 }
 
 
 
 //////////////////////////////////////////////////////////////////////////////////
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 830px){
 
     nav{
         display: grid;
@@ -94,17 +112,21 @@ ul.links{
         "links links";
         overflow: hidden;
     }
-
+    
     nav .links{   
         grid-area: links;
-
+        
         grid-auto-flow: row;
         gap: .5rem; 
         height: 0;
         transform: translateY(100%);
-        transition: all .35s ease-in-out;  
+        transition: all .35s ease-in-out; 
+        width: 100%; 
+        background-color: var(--color-primary);
+
         .link a{
             padding: .5rem 2rem;
+            border-radius: 0;
         }
     }
 
@@ -124,11 +146,11 @@ ul.links{
     
     .burger{
         display: block !important;
-        grid-area: burger;
-        padding-bottom: 1rem;  
+        grid-area: burger; 
         cursor: pointer;
         justify-self: end;
         transition: all .5s ease;
+        transform-origin: center;
     }
     
     .burger.close{

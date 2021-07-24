@@ -1,0 +1,106 @@
+// .home-bg{   
+//     background-image: url(/img/home_bg_xl_1569X1080.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     z-index: -1;
+
+// }
+
+// .triangle-red-bg{
+//     width: 100%;
+//     height: 100%;
+//     background-color: var(--color-primary);
+// }
+// .triangle-white-bg{
+    
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+    
+    
+//     background-color: var(--color-secondary);
+// }
+
+
+
+img.home-bg{
+    grid-column: 1 / -1 ;
+    grid-row: 1 / span 2;
+    display: block;
+    position:absolute;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: left bottom;
+    z-index: -3;
+}
+
+.triangle-white-bg{
+    grid-column: 1 / -1 ;
+    grid-row: 1 / span 2;
+    position:absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: white;
+    clip-path: polygon(0 100%, 100% 30%, 100% 100%);
+    z-index: -2; 
+  }
+
+.triangle-red-bg{
+    grid-column: 1 / -1 ;
+    grid-row: 1 / span 2;
+    position:absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: var(--color-primary);
+    clip-path: polygon(100% 0, 30% 0, 100% 100%);
+    z-index: -1; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
