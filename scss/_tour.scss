@@ -1,0 +1,124 @@
+section#tour-package{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+    justify-items: center;
+    row-gap: 2rem;
+    
+
+    
+    & > * {
+        max-width: 400px;
+    }
+
+}
+
+// .tour-1 {
+//     justify-self: end;
+// }
+// .tour-2 {
+//     justify-self: center;
+// }
+// .tour-3 {
+//     justify-self: start;
+// }
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 2rem;
+    font-family: 'Oswald', sans-serif;
+    
+    .card-image img{
+      display: block;
+    }
+    .card-images{
+      position: relative;
+      width:100%;
+      height: auto;
+
+      &::before{
+        content: "";
+        position: absolute;
+        left: -18px;
+        bottom: -18px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-primary);
+        clip-path: polygon(0 50%, 0% 100%, 50% 100%);
+      }
+      .image-tag{
+        position: absolute;
+        color: white;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;      
+
+        .tag1{
+          font-weight: 500;
+          font-size: 2rem;
+        }
+        .tag2{
+          font-weight: 500;
+          font-size: 4rem;
+          margin-left: 18px;
+          letter-spacing: -4px;
+        }
+        .tag3{
+          margin-top: -18px;
+          font-weight: 200;
+          font-size: 1.1rem;
+        }
+       
+      }
+      
+    }
+
+    .card-content, .card-btn{
+      width: 363px;
+    }
+
+    .card-content {
+      padding-right: 1rem;
+      h3{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: var(--color-dark-text);
+        letter-spacing: -1px;
+      }
+
+      p{
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600;
+      }
+    }
+    
+    button{
+      border: none;
+      border-radius: 25px;
+      width: 150px;
+      height: 50px;
+      color: white;
+      background-color: var(--color-primary);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 2px solid var(--color-primary);
+      transition: all .25s ease-in-out;
+      &:hover{
+          background-color: white;
+          color: var(--color-dark-text);
+      }
+    }
+    
+  }
