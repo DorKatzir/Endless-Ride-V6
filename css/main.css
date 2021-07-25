@@ -478,11 +478,13 @@ section#about-company .right-side .right-side-rider {
 }
 
 section#about-company .right-side .right-side-rider .rider-image img {
-  min-width: 126px;
-  min-height: 126px;
+  max-width: 126px;
+  max-height: 126px;
   border: 6px solid #dcdcdc;
   border-radius: 50%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section#about-company .right-side .right-side-rider .rider-content {
@@ -491,6 +493,7 @@ section#about-company .right-side .right-side-rider .rider-content {
   -ms-grid-row-align: center;
       align-self: center;
   max-width: 300px;
+  width: 100%;
 }
 
 section#about-company .right-side .right-side-rider .rider-content .rider-content-title {
@@ -523,6 +526,83 @@ section#about-company .right-side .right-side-rider .rider-content .rider-conten
   font-size: .9rem;
   font-weight: 600;
   color: #a6a6a6;
+}
+
+section#about-company .about-red {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  background: var(--color-primary);
+  z-index: -1;
+}
+
+section#about-company .about-white {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/ span 2;
+  background: white;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1168px) {
+  section#about-company {
+    all: initial;
+    all: unset;
+    margin-top: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  section#about-company .left-side {
+    all: initial;
+    all: unset;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    gap: 1rem;
+  }
+  section#about-company .right-side {
+    all: initial;
+    all: unset;
+    background: #fff;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    gap: 1rem;
+  }
+  section#about-company .about-red {
+    grid-column: none;
+    grid-row: none;
+    display: none;
+    visibility: none;
+  }
+  section#about-company .about-white {
+    grid-column: none;
+    grid-row: none;
+    display: none;
+    visibility: none;
+  }
+  section#about-company img.about-image {
+    display: none;
+    visibility: none;
+  }
 }
 
 :root {
