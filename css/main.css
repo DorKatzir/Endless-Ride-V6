@@ -361,6 +361,170 @@ section#tour-package {
   color: var(--color-dark-text);
 }
 
+section#about-company {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto auto 1fr;
+      grid-template-columns: 1fr auto auto 1fr;
+  -ms-grid-rows: 50px 50px 1fr 50px 50px;
+      grid-template-rows: 50px 50px 1fr 50px 50px;
+      grid-template-areas: ".  center-img  center-img  . " "left-side  center-img  center-img  . " "left-side  center-img  center-img  right-side" ".  center-img  center-img  right-side" ".  center-img  center-img  . ";
+}
+
+section#about-company .left-side {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: left-side;
+}
+
+section#about-company .right-side {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: right-side;
+}
+
+section#about-company img.about-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: center-img;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+section#about-company .about-red {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  background: var(--color-primary);
+  z-index: -1;
+}
+
+section#about-company .about-white {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/ span 2;
+  background: white;
+  z-index: -1;
+}
+
+section#about-company .left-side {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  justify-items: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fcfbfb;
+  padding: 1rem;
+}
+
+section#about-company .left-side h2 {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section#about-company .left-side .left-side-card {
+  max-width: 400px;
+}
+
+section#about-company .left-side .left-side-card .left-side-card-title {
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+section#about-company .left-side .left-side-card .left-side-card-text {
+  font-size: .9rem;
+}
+
+section#about-company .right-side {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  justify-items: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+section#about-company .right-side .right-side-rider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+section#about-company .right-side .right-side-rider .rider-image img {
+  min-width: 126px;
+  min-height: 126px;
+  border: 6px solid #dcdcdc;
+  border-radius: 50%;
+  display: block;
+}
+
+section#about-company .right-side .right-side-rider .rider-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 300px;
+}
+
+section#about-company .right-side .right-side-rider .rider-content .rider-content-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: start;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 3vw, 3rem);
+  letter-spacing: -2px;
+  color: #5e5e5e;
+}
+
+section#about-company .right-side .right-side-rider .rider-content .rider-content-title span {
+  letter-spacing: 0;
+  font-size: clamp(0.25rem, 1.5vw, 1.5rem);
+  font-weight: 200;
+  color: #969696;
+  letter-spacing: -1px;
+}
+
+section#about-company .right-side .right-side-rider .rider-content .rider-content-text p {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #a6a6a6;
+}
+
 :root {
   --color-primary: rgb(205, 10, 45);
   --color-secondary: hsl(0, 0%, 93%);

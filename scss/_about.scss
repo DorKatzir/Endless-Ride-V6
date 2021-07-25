@@ -1,0 +1,170 @@
+section#about-company{
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 50px 50px 1fr 50px 50px;
+    grid-template-areas: 
+            ".  center-img  center-img  . "
+            "left-side  center-img  center-img  . "
+            "left-side  center-img  center-img  right-side"
+            ".  center-img  center-img  right-side"
+            ".  center-img  center-img  . ";
+
+
+    .left-side{
+        grid-area: left-side;
+    }
+        
+    .right-side{
+        grid-area: right-side;
+    }
+    
+    img.about-image{
+        grid-area: center-img;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    
+    }
+
+    .about-red{
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        background: var(--color-primary);
+        z-index: -1;
+    }
+    .about-white{
+        grid-column: 3 / span 2;
+        grid-row: 3/ span 2;
+        background: white;
+        z-index: -1;
+    }
+
+    ////////// About Content /////////////////
+    .left-side {
+        display: grid;
+        gap: 2rem;
+        grid-auto-rows: max-content;
+        justify-items: end;
+        align-content: center;
+        color: rgb(252, 251, 251);
+        padding: 1rem;
+
+        h2{
+            font-size: 3rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase; 
+        }
+
+        .left-side-card{
+            max-width: 400px;
+            .left-side-card-title{
+                font-size: 1.8rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight:500; 
+            }
+            .left-side-card-text{
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .right-side{
+        display: grid;
+        grid-auto-rows: max-content;
+        justify-items: start;
+        align-content: center;
+        gap: 2rem;
+        padding: 1rem;
+
+        .right-side-rider{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            gap: 2rem;
+            
+            .rider-image{        
+                img{
+                    min-width: 126px;
+                    min-height: 126px;
+                    border: 6px solid #dcdcdc;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+
+            .rider-content{
+                display: grid;
+                align-self: center;
+                max-width: 300px;
+
+                .rider-content-title{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    gap: .5rem;
+                    align-items: center;
+                    justify-items: start;
+        
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-size: clamp(1rem, 3vw, 3rem);
+                    letter-spacing: -2px;
+                    color: hsl(0, 0%, 37%);
+                    
+                    span{
+                    letter-spacing: 0;
+                    font-size: clamp(.25rem, 1.5vw,1.5rem);
+                    font-weight: 200;
+                    color: hsl(0, 0%, 59%);
+                    letter-spacing: -1px;
+                    }
+                }
+                .rider-content-text p{
+                    font-size: .9rem;
+                    font-weight: 600;
+                    color: hsl(0, 0%, 65%);
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #destinations-wrap{
+//     margin: 0 auto;
+//     width: 100vw;
+//     max-width: 1700px;
+//     height: 805px;
+//     display:grid;
+//     grid-template-columns: minmax(0, 667px) minmax(0,366px) minmax(0,667px);
+//     grid-template-rows: 103px 649px 53px;
+//     grid-template-areas: 
+//             ".  destinations-image  ."
+//             "left-side  destinations-image  right-side"
+//             ".  destinations-image  . ";
+            
+  
+   
+  
+//   }
