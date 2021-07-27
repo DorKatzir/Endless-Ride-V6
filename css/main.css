@@ -605,6 +605,190 @@ section#about-company .about-white {
   }
 }
 
+section#testimonial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+section#testimonial .testimonial-title {
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 1rem;
+}
+
+section#testimonial .testimonial-title .title-wrapper {
+  text-align: center;
+}
+
+section#testimonial .testimonial-title .title-wrapper h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-dark-text);
+}
+
+section#testimonial .testimonial-title .title-wrapper h2 span {
+  color: var(--color-primary);
+}
+
+section#testimonial .testimonial-title .title-wrapper p {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #5d5b5b;
+}
+
+section#testimonial .testimonial-card {
+  padding: 1rem;
+  background: #fff;
+}
+
+section#testimonial .testimonial-card .traveler-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+section#testimonial .testimonial-card .traveler-details .traveler-name {
+  font-size: 1.5rem;
+}
+
+section#testimonial .testimonial-card .traveler-details .traveler-name .traveler-tag {
+  font-size: .8rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: var(--color-light-text);
+  letter-spacing: 1px;
+  margin-top: -.25rem;
+}
+
+section#testimonial .testimonial-card .traveler-details .traveler-image img {
+  border-radius: 50%;
+}
+
+section#testimonial .testimonial-card .traveler-content {
+  padding: 1rem;
+  font-size: .9rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  color: #212121;
+}
+
+section#testimonial .testimonial-image {
+  background: #fff;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+section#testimonial .testimonial-image img {
+  max-width: 200px;
+}
+
+@media screen and (min-width: 464px) {
+  .testimonial-card, .testimonial-image {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 664px) {
+  section#testimonial {
+    -ms-grid-columns: (minmax(200px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  section#testimonial .testimonial-title {
+    width: 100%;
+    grid-column: 1 / -1;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+  }
+  section#testimonial .testimonial-title .title-wrapper {
+    max-width: 700px;
+    text-align: center;
+  }
+  section#testimonial .testimonial-title .title-wrapper h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-dark-text);
+  }
+  section#testimonial .testimonial-title .title-wrapper h2 span {
+    color: var(--color-primary);
+  }
+  section#testimonial .testimonial-title .title-wrapper p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5d5b5b;
+  }
+  section#testimonial .testimonial-card {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    max-width: 650px;
+    display: -ms-grid;
+    display: grid;
+    background: none;
+    padding: 1rem 1rem 0 1rem;
+  }
+  section#testimonial .testimonial-card .testimonial-card-traveler {
+    background-color: #fff;
+    max-width: 565px;
+    min-height: 444px;
+    padding: 3rem;
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+  }
+  section#testimonial .testimonial-card .traveler-content {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: #212121;
+  }
+  section#testimonial .testimonial-image {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 650px;
+    background: none;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  section#testimonial .testimonial-image img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 :root {
   --color-primary: rgb(205, 10, 45);
   --color-secondary: hsl(0, 0%, 93%);
