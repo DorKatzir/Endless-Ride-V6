@@ -88,13 +88,20 @@ section#testimonial{
 
 ///////////////////////////////////////////////
 @media screen and (min-width:464px) {
+    section#testimonial{
+       
+        grid-template-columns: 1fr 1fr;
+       
+    }
+
     .testimonial-card, .testimonial-image{
         grid-column: span 2;
+        
     }     
 }
 
 ///////////////////////////////////////////////
-@media screen and (min-width:664px) {
+@media screen and (min-width:844px) {
    
     section#testimonial{
         grid-template-columns: repeat(2, minmax(200px, 1fr)); 

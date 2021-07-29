@@ -702,12 +702,16 @@ section#testimonial .testimonial-image img {
 }
 
 @media screen and (min-width: 464px) {
+  section#testimonial {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .testimonial-card, .testimonial-image {
     grid-column: span 2;
   }
 }
 
-@media screen and (min-width: 664px) {
+@media screen and (min-width: 844px) {
   section#testimonial {
     -ms-grid-columns: (minmax(200px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(200px, 1fr));
