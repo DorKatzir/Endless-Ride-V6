@@ -1,5 +1,4 @@
-section#travel-blog{  
-    // min-height: 828px;  
+section#travel-blog{   
     display: grid;
     grid-template-columns: 1fr repeat(3, minmax(250px, auto)) 1fr;
     gap: 2rem;
