@@ -1687,6 +1687,12 @@ section#travel-blog {
     grid-row: 1;
     padding: 2rem;
   }
+  .blog-title h2 {
+    font-size: 2.5rem;
+  }
+  .blog-title p {
+    font-size: .95rem;
+  }
   .blog-asia {
     -ms-grid-column: 1;
     grid-column: 1;
@@ -1719,7 +1725,13 @@ section#travel-blog {
     grid-column: 1 / -1;
     -ms-grid-row: 1;
     grid-row: 1;
-    padding: 2rem;
+    padding: 1rem;
+  }
+  .blog-title h2 {
+    font-size: 2rem;
+  }
+  .blog-title p {
+    font-size: .9rem;
   }
   .blog-asia {
     grid-column: 1 / -1;
