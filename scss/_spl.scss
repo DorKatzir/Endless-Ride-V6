@@ -79,7 +79,6 @@ section#spl-feature{
       justify-content: center;
       align-items: center;
       padding-bottom: 1rem;
-      color: #fff;
       .title-wrapper{
         max-width: 850px;
         display: flex;
@@ -88,6 +87,7 @@ section#spl-feature{
         
         text-align: center;
         h2{
+          color: #fff;
           font-family: 'Oswald', sans-serif;
           font-size: 3rem;
           font-weight: 700;
@@ -98,6 +98,7 @@ section#spl-feature{
           }
         }
         p{
+          color: #fff;
           font-size: 1rem;
           font-weight: 600;
         }
@@ -277,6 +278,7 @@ section#spl-feature{
               flex-direction: column;
               row-gap: 1rem;
               text-align: center;
+              color: #fff;
               h2{
                 
                 font-size: 3rem;

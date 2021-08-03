@@ -12,6 +12,7 @@
 @import "spl";
 @import "blog";
 @import "contact";
+@import "footer";
 
 :root{
   --color-primary: rgb(205, 10, 45);
@@ -53,9 +54,6 @@ body{
   grid-template-rows: repeat(9,auto-fit);
   position: relative;
   
- 
-  // // display: grid;
-  // grid-template-columns: 
 
 & > *{
   padding-top: 2rem;

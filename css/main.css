@@ -167,9 +167,21 @@ h1 {
   color: #fff;
   font-family: 'Merienda', cursive;
   font-size: clamp(0.5rem, 7vw, 3rem);
-  line-height: clamp(0.25rem, 7vh, 5rem);
+  line-height: clamp(0.25rem, 3vh, 3rem);
   text-shadow: 3.709px 1.498px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+@media screen and (max-width: 731px) {
+  section#home h1 {
+    line-height: clamp(0.25rem, 3vh, 3rem);
+  }
+}
+
+@media screen and (max-width: 465px) {
+  section#home h1 {
+    line-height: clamp(0.25rem, 2vh, 2rem);
+  }
 }
 
 img.home-bg {
@@ -574,6 +586,12 @@ section#about-company .about-white {
     justify-items: center;
     gap: 1rem;
   }
+  section#about-company .left-side h2 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   section#about-company .right-side {
     all: initial;
     all: unset;
@@ -602,6 +620,12 @@ section#about-company .about-white {
   section#about-company img.about-image {
     display: none;
     visibility: none;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  section#about-company h2 {
+    font-size: 2.6rem !important;
   }
 }
 
@@ -915,7 +939,6 @@ section#spl-feature .tours-title {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 1rem;
-  color: #fff;
 }
 
 section#spl-feature .tours-title .title-wrapper {
@@ -932,6 +955,7 @@ section#spl-feature .tours-title .title-wrapper {
 }
 
 section#spl-feature .tours-title .title-wrapper h2 {
+  color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -944,6 +968,7 @@ section#spl-feature .tours-title .title-wrapper h2 span {
 }
 
 section#spl-feature .tours-title .title-wrapper p {
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -1160,6 +1185,7 @@ section#spl-feature .tours-right .tours-right-content .tours-text p {
             flex-direction: column;
     row-gap: 1rem;
     text-align: center;
+    color: #fff;
   }
   section#spl-feature .tours-title .title-wrapper h2 {
     font-size: 3rem;
@@ -2113,6 +2139,32 @@ section#contact .contact-bg-color {
     height: 40px;
     padding: .5rem;
   }
+}
+
+footer {
+  background-color: var(--color-primary);
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(0, 1300px) 1fr;
+      grid-template-columns: 1fr minmax(0, 1300px) 1fr;
+      grid-template-areas: " .  footer-content  . ";
+  background-color: var(--color-primary);
+}
+
+footer .footer-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-content;
+}
+
+footer .footer-content p {
+  color: whitesmoke;
+  font-size: .65rem;
+  text-align: center;
 }
 
 :root {
