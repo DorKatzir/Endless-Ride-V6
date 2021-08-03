@@ -178,12 +178,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 465px) {
-  section#home h1 {
-    line-height: clamp(0.25rem, 3vh, 2rem);
-  }
-}
-
 img.home-bg {
   grid-column: 1 / -1;
   -ms-grid-row: 1;
