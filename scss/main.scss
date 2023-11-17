@@ -55,11 +55,18 @@ body{
   position: relative;
   
 
-& > *{
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+  & > *{
+    padding-block: 4rem;
+
+    &:first-child{
+      padding-block-start: 1rem;
+      padding-inline: 1rem;
+      width: 100%;
+      max-width: 1290px;
+      justify-self: center;
+    }
+  }
+  
 
 }
 

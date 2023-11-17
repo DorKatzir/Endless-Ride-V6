@@ -1,12 +1,13 @@
 
 section#home{
+    padding-block: 0;
     justify-self: center;
     max-width: 960px;
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
-    justify-items: center; 
-    
+    justify-items: center;
+    gap: 1rem; 
 }
 
 
@@ -16,7 +17,7 @@ h1{
     font-size: clamp(.5rem, 7vw, 3rem);
     // line-height: clamp(.25rem, 5vh, 3rem);
     text-shadow: 3.709px 1.498px 0px rgba(0, 0, 0, 0.5); 
-    text-align: center;       
+    text-align: center;      
   }
 
 

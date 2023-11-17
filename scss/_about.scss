@@ -43,7 +43,7 @@ section#about-company{
         display: grid;
         gap: 2rem;
         grid-auto-rows: max-content;
-        justify-items: end;
+        justify-items: center;
         align-content: center;
         color: rgb(252, 251, 251);
         padding: 1rem;
@@ -71,12 +71,13 @@ section#about-company{
     .right-side{
         display: grid;
         grid-auto-rows: max-content;
-        justify-items: start;
-        align-content: center;
         gap: 2rem;
         padding: 1rem;
-
+        align-content: center;
+        justify-content: center;
+      
         .right-side-rider{
+            max-width: 400px;
             display: grid;
             grid-template-columns: auto auto;
             align-items: center;

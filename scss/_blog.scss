@@ -1,4 +1,5 @@
-section#travel-blog{   
+section#travel-blog{ 
+    padding-block-start: 10rem;  
     display: grid;
     grid-template-columns: 1fr repeat(3, minmax(250px, auto)) 1fr;
     gap: 2rem;

@@ -1,25 +1,27 @@
 footer{
-    
     background-color: var(--color-primary);
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
     width: 100%;
-    display:grid;
-    grid-template-columns: 1fr minmax(0, 1300px) 1fr;
     
-    grid-template-areas: " .  footer-content  . ";
-    
-    background-color: var(--color-primary);
-  
+   
     .footer-content{
-      grid-area: footer-content;
-     
-      p{
+      margin: 0 auto;
+      display: flex;
+      max-width: 960px;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+      p.copy1{
         color: whitesmoke;
-        font-size: .65rem;
+        font-size: .9rem;
         text-align: center;
+      }
 
+      p.copy2{
+        color: var(--color-dark-text);
+        font-size: .9rem;
+        font-weight: bold;
+        text-align: center;
       }
   
     }
